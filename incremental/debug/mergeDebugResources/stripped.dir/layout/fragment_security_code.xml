@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Код для входу"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"/>
+
+    <LinearLayout
+        android:id="@+id/llCodeDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+        <!-- Add 4 dots programmatically or as ImageViews/TextViews -->
+        <View android:layout_width="16dp" android:layout_height="16dp" android:background="@drawable/dot_filled"/>
+        <View android:layout_width="16dp" android:layout_height="16dp" android:background="@drawable/dot_empty"/>
+        <View android:layout_width="16dp" android:layout_height="16dp" android:background="@drawable/dot_empty"/>
+        <View android:layout_width="16dp" android:layout_height="16dp" android:background="@drawable/dot_empty"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridNumberPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/llCodeDots"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+        <!-- Add number buttons programmatically or as MaterialButtons -->
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tvForgotCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Не пам'ятаю код для входу"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

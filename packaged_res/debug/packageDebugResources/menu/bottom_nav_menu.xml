@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_feed"
+        android:title="@string/feed" />
+
+    <item
+        android:id="@+id/my_pets"
+        android:icon="@drawable/ic_pets"
+        android:title="@string/my_pets" />
+
+    <item
+        android:id="@+id/services"
+        android:icon="@drawable/ic_services"
+        android:title="@string/services" />
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/menu" />
+</menu> 

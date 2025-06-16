@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvHelpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Звернення про допомогу"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etHelpSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Назва звернення"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/etHelpDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Детальний опис звернення"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Завантажити фото"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btnUploadPhoto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_camera"
+            android:background="@drawable/circle_background"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додати геолокація"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btnAddLocation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_location"
+            android:background="@drawable/circle_background"
+            android:layout_marginTop="8dp"/>
+
+        <CheckBox
+            android:id="@+id/cbFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Я хочу отримати зворотно відповідь"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitHelp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Надіслати"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="28dp"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView> 
