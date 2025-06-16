@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.yourappname.petapp.presentation.auth.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_feed"
+            app:destination="@id/feed"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/code"
+        android:name="com.yourappname.petapp.presentation.auth.CodeFragment"
+        android:label="Code">
+        <action
+            android:id="@+id/action_code_to_loading"
+            app:destination="@id/loading" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loading"
+        android:name="com.yourappname.petapp.presentation.loading.LoadingFragment"
+        android:label="Loading">
+        <action
+            android:id="@+id/action_loading_to_feed"
+            app:destination="@id/feed"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feed"
+        android:name="com.yourappname.petapp.presentation.feed.FeedFragment"
+        android:label="Feed">
+        <action
+            android:id="@+id/action_feed_to_services"
+            app:destination="@id/services" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/my_pets"
+        android:name="com.yourappname.petapp.presentation.mypets.MyPetsFragment"
+        android:label="My Pets" />
+
+    <fragment
+        android:id="@+id/services"
+        android:name="com.yourappname.petapp.presentation.services.ServicesFragment"
+        android:label="Services" />
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.yourappname.petapp.presentation.menu.MenuFragment"
+        android:label="Menu">
+        <action
+            android:id="@+id/action_menu_to_help"
+            app:destination="@id/help" />
+        <action
+            android:id="@+id/action_menu_to_documents"
+            app:destination="@id/documents" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/help"
+        android:name="com.yourappname.petapp.presentation.help.HelpFragment"
+        android:label="Help" />
+
+    <fragment
+        android:id="@+id/documents"
+        android:name="com.yourappname.petapp.presentation.documents.DocumentsFragment"
+        android:label="Documents">
+        <action
+            android:id="@+id/action_documents_to_document_detail"
+            app:destination="@id/document_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/document_detail"
+        android:name="com.yourappname.petapp.presentation.documents.DocumentDetailFragment"
+        android:label="Document Detail">
+        <argument
+            android:name="documentId"
+            app:argType="string" />
+    </fragment>
+
+</navigation> 

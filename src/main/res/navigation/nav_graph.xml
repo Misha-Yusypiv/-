@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.myapplication.ui.loading.LoadingFragment"
+        android:label="Loading" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplication.ui.auth.LoginFragment"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_code"
+            app:destination="@id/codeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="com.example.myapplication.ui.auth.CodeFragment"
+        android:label="Code" >
+        <action android:id="@+id/action_code_to_feed"
+            app:destination="@id/feedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.example.myapplication.ui.feed.FeedFragment"
+        android:label="Feed" >
+        <!-- додай дії на інші екрани за потреби -->
+        <action android:id="@+id/action_feed_to_help"
+            app:destination="@id/helpFragment"/>
+        <action android:id="@+id/action_feed_to_documents"
+            app:destination="@id/documentsFragment"/>
+        <action android:id="@+id/action_feed_to_mypets"
+            app:destination="@id/myPetsFragment"/>
+        <action android:id="@+id/action_feed_to_services"
+            app:destination="@id/servicesFragment"/>
+        <action android:id="@+id/action_feed_to_menu"
+            app:destination="@id/menuFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.myapplication.ui.help.HelpFragment"
+        android:label="Help" />
+
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="com.example.myapplication.ui.documents.DocumentsFragment"
+        android:label="Documents" >
+        <action android:id="@+id/action_documents_to_detail"
+            app:destination="@id/documentDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/documentDetailFragment"
+        android:name="com.example.myapplication.ui.documents.DocumentDetailFragment"
+        android:label="DocumentDetail" />
+
+    <fragment
+        android:id="@+id/myPetsFragment"
+        android:name="com.example.myapplication.ui.mypets.MyPetsFragment"
+        android:label="MyPets" />
+
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.myapplication.ui.services.ServicesFragment"
+        android:label="Services" />
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.myapplication.ui.menu.MenuFragment"
+        android:label="Menu" />
+
+</navigation>

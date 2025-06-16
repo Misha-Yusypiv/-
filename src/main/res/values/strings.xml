@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pet App</string>
+    
+    <!-- Navigation -->
+    <string name="feed">Feed</string>
+    <string name="my_pets">My Pets</string>
+    <string name="services">Services</string>
+    <string name="menu">Menu</string>
+    
+    <!-- Auth -->
+    <string name="login">Login</string>
+    <string name="welcome_to_pet_app">Welcome to Pet App</string>
+    <string name="login_description">Sign in to manage your pets and access all features</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="enter_phone">Enter your phone number</string>
+    <string name="enter_code">Enter verification code</string>
+    <string name="verify">Verify</string>
+    
+    <!-- Pets -->
+    <string name="add_pet">Add Pet</string>
+    <string name="edit_pet">Edit Pet</string>
+    <string name="delete_pet">Delete Pet</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="pet_type">Pet Type</string>
+    <string name="pet_breed">Breed</string>
+    <string name="pet_age">Age</string>
+    
+    <!-- Documents -->
+    <string name="documents">Documents</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="document_details">Document Details</string>
+    
+    <!-- Help -->
+    <string name="help">Help</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="faq">FAQ</string>
+    
+    <!-- Services -->
+    <string name="veterinary">Veterinary</string>
+    <string name="veterinary_description">Professional veterinary care for your pets. Book appointments for check-ups, vaccinations, and treatments.</string>
+    <string name="grooming">Grooming</string>
+    <string name="grooming_description">Professional grooming services including bathing, haircuts, and nail trimming.</string>
+    <string name="training">Training</string>
+    <string name="training_description">Professional training services to help your pets learn good behavior and basic commands.</string>
+    <string name="boarding">Boarding</string>
+    <string name="boarding_description">Safe and comfortable boarding facilities for your pets when you\'re away.</string>
+    <string name="book_appointment">Book Appointment</string>
+</resources>
